@@ -96,23 +96,27 @@ class Pokemon
 }
 
 $pokes = array();
-$pokes[0] = new Pokemon(0,'Bola de fuego', 'fireball.jpg');
-$pokes[0]->setTexto("Esta Bola de Fuego destruye a todos los oponentes en el campo de batalla");
-$pokes[1] = new Carta(1,'Dragon Shivano', 'dragon.jpg');
-$pokes[1]->setTexto("El dragón Shivano destruyó la economía de Wariburgo al robar todas las monedas de oro");
-$pokes[2] = new Carta(1,'Ángel de Esperanza', 'angel.jpg');
-$pokes[2]->setTexto("El Ángel de Esperanza trajo alegría y solidaridad entre la gente de Wariburgo");
+$pokes[0] = new Pokemon(0,'Druddigon', 'Druddigon.png');
+$pokes[0]->setTexto("Este Pokémon suele ser muy buscado por los cazadores, debido a que por su extrema rareza se vende a muy alto precio");
+$pokes[1] = new Pokemon(1,'Kadabra', 'Kadabra.png');
+$pokes[1]->setTexto("Kadabra es un Pokémon de tipo psíquico introducido en la primera generación. Es la forma evolucionada de Abra.");
+$pokes[2] = new Pokemon(2,'Pikachu', 'Pikachu.png');
+$pokes[2]->setTexto("Pikachu almacena una gran cantidad de electricidad en sus mejillas");
+$pokes[3] = new Pokemon(3,'Pupitar', 'Pupitar.png');
+$pokes[3]->setTexto("Pupitar es muy rápido y destaca en ataque, defensa y vitalidad");
+$pokes[4] = new Pokemon(4,'Tauros', 'Tauros.png');
+$pokes[4]->setTexto("Tiene tres colas que le ayudan a ganar gran velocidad y mantener el equilibrio");
 
 
 
 
-$c = $cartas[0];
-if(isset($_GET["cartas"]))
+$c = $pokes[0];
+if(isset($_GET["pokes"]))
 {
-    $n = $_GET["cartas"];
-    if($n < count($cartas))
+    $n = $_GET["pokes"];
+    if($n < count($pokes))
     {
-        $c = $cartas[$n];
+        $c = $pokes[$n];
     }
     else
     {
@@ -122,7 +126,7 @@ if(isset($_GET["cartas"]))
 }
 else
 {
-    echo "Error, número de carta no especificado";
+    echo "Error, número de pokemon no especificado";
 
  
 }
