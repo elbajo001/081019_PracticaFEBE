@@ -159,11 +159,13 @@ else
             </p>
             
             <form class = "centrado caja" method="get">
-                <select name="cartas" onchange="this.form.submit()">
+                <select name="pokes" onchange="this.form.submit()">
                     <option value"0"> --Seleccione--</option>
-                    <option value="0">Bola</option>
-                    <option value="1">Dragón</option>
-                    <option value="2">Ángel</option>                
+                    <option value="0">Druddigon</option>
+                    <option value="1">Kadabra</option>
+                    <option value="2">Pikachu</option>                
+                    <option value="3">Pupitar</option>
+                    <option value="4">Tauros</option>
                 </select>
                 
             </form>
